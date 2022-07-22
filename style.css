@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Red Hat Text', sans-serif;
 }
 
 body {
@@ -10,8 +11,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url('./images/bg-stars.svg'), url('./images/pattern-hills.svg') no-repeat;
-
+    background: url('./images/bg-stars.svg'), url('./images/pattern-hills.svg') no-repeat hsl(236, 21%, 26%) bottom;
+    background-size: 100%;
     flex-direction: column;
 }
 
