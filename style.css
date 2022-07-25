@@ -47,21 +47,38 @@ h1 {
 }
 
 .time {
-    width:60px;
-    margin: 0 5px;
+    width:100px;
+    margin: 0 10px;
     border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 55px;
+    height: 95px;
     background-color: hsl(236, 21%, 26%);
     color: hsl(345, 95%, 68%);
-    font-size: 30px;
+    font-size: 50px;
 }
 
 p {
-    color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 65%);
+    font-size: 12px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
 
+.social-links {
+    margin-top: 350px;
+}
+
+.social-links svg {
+    margin: 0 12px;
+    fill: black;
+    cursor: pointer;
+}
+
+.social-links svg:hover {
+    filter:brightness(100);
+    fill: hsl(345, 95%, 68%);
 }
 
 
