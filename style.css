@@ -74,6 +74,7 @@ p {
     margin: 0 12px;
     fill:#8385A9;
     cursor: pointer;
+    transition: .5s;
 }
 
 .social-links svg:hover {
