@@ -72,12 +72,11 @@ p {
 
 .social-links svg {
     margin: 0 12px;
-    fill: black;
+    fill:#8385A9;
     cursor: pointer;
 }
 
 .social-links svg:hover {
-    filter:brightness(100);
     fill: hsl(345, 95%, 68%);
 }
 
