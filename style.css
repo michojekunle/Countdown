@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Red Hat Text', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
 }
 
 body {
@@ -11,10 +13,57 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url('./images/bg-stars.svg'), url('./images/pattern-hills.svg') no-repeat hsl(236, 21%, 26%) bottom;
+    background: url('./images/bg-stars.svg'), url('./images/pattern-hills.svg') no-repeat hsl(234, 17%, 12%) bottom;
     background-size: 100%;
     flex-direction: column;
 }
+
+.container {
+    height:80vh;
+    max-height: 1000px;
+    min-height:600px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.countdown-container {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;justify-content: center;
+}
+
+.day, .hour, .minutes, .seconds {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time {
+    width:60px;
+    margin: 0 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+    background-color: hsl(236, 21%, 26%);
+    color: hsl(345, 95%, 68%);
+    font-size: 30px;
+}
+
+p {
+    color: hsl(0, 0%, 100%);
+
+}
+
 
 .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
