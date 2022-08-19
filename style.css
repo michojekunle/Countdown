@@ -8,7 +8,7 @@
 }
 
 body {
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -18,10 +18,32 @@ body {
     flex-direction: column;
 }
 
+.new-year {
+    position: absolute;
+    color: transparent;
+    font-family:cursive;
+    font-size: 100px;
+    -webkit-text-stroke: 1px hsl(345, 95%, 68%);
+    text-shadow: 2px 0 25px 25px #fff;
+    margin-top: 150px;
+    z-index: -1;
+    animation: animate 9s ease-in-out infinite linear;
+}
+
+@keyframes animate {
+    from{
+        opacity: 0;
+        transform: rotateZ(-15deg) scale(.8);
+    }
+    to {
+        opacity: 1;
+        transform: rotateZ(15deg) scale(1.2);
+    }
+}
+
 .container {
     height:80vh;
     max-height: 1000px;
-    min-height:600px;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -37,7 +59,8 @@ h1 {
 .countdown-container {
     margin-top: 60px;
     display: flex;
-    align-items: center;justify-content: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .day, .hour, .minutes, .seconds {
